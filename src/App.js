@@ -9,13 +9,16 @@ import AtPickup from "./scenes/AtPickup";
 import Intransit from "./scenes/Intransit";
 import AtUnloading from "./scenes/AtUnloading";
 import Complete from "./scenes/Complete";
+import Pod from "./scenes/Pod";
+import Billing from "./scenes/Billing";
+import Payment from "./scenes/Payment";
+import QBR from "./scenes/QBR";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { ColorModeContext, useMode } from "./theme";
 
 function App() {
   const [theme, colorMode] = useMode();
   const [isSidebar, setIsSidebar] = useState(true);
-
   return (
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
@@ -32,6 +35,10 @@ function App() {
               <Route path="/intransit" element={<Intransit />} />
               <Route path="/atunloading" element={<AtUnloading />} />
               <Route path="/completed" element={<Complete />} />
+              <Route path="/pod" element={<Pod />} />
+              <Route path="/billing" element={<Billing />} />
+              <Route path="/payment" element={<Payment />} />
+              <Route path="/qbr" element={<QBR />} />
             </Routes>
           </main>
         </div>
