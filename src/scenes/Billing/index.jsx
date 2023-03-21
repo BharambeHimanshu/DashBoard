@@ -165,7 +165,7 @@ const Billing = () => {
             color: colors.greenAccent[300],
           },
           "& .MuiDataGrid-columnHeaders": {
-            backgroundColor: colors.blueAccent[700],
+            backgroundColor: colors.yellowAccent[200],
             borderBottom: "none",
           },
           "& .MuiDataGrid-virtualScroller": {
@@ -173,7 +173,7 @@ const Billing = () => {
           },
           "& .MuiDataGrid-footerContainer": {
             borderTop: "none",
-            backgroundColor: colors.blueAccent[700],
+            backgroundColor: colors.yellowAccent[200],
           },
           "& .MuiCheckbox-root": {
             color: `${colors.greenAccent[200]} !important`,
@@ -187,6 +187,7 @@ const Billing = () => {
           rows={mockDataContacts}
           columns={columns}
           components={{ Toolbar: GridToolbar }}
+          sx={{ overflowX: "scroll" }}
         />
       </Box>
     </Box>

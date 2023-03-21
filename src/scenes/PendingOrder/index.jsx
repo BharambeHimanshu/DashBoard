@@ -10,7 +10,7 @@ const PendingOrder = () => {
   const colors = tokens(theme.palette.mode);
 
   const columns = [
-    { field: "unqiue ID", headerName: "UNIQUE ID", flex: 1 },
+    { field: "name", headerName: "UNIQUE ID", flex: 1 },
     { field: "Consignor", headerName: "CONSIGNOR", flex:1 },
     {
       field: "Consignee",
@@ -85,7 +85,7 @@ const PendingOrder = () => {
             color: colors.greenAccent[300],
           },
           "& .MuiDataGrid-columnHeaders": {
-            backgroundColor: colors.blueAccent[700],
+            backgroundColor: colors.yellowAccent[200],
             borderBottom: "none",
           },
           "& .MuiDataGrid-virtualScroller": {
@@ -93,7 +93,7 @@ const PendingOrder = () => {
           },
           "& .MuiDataGrid-footerContainer": {
             borderTop: "none",
-            backgroundColor: colors.blueAccent[700],
+            backgroundColor: colors.yellowAccent[200],
           },
           "& .MuiCheckbox-root": {
             color: `${colors.greenAccent[200]} !important`,
@@ -107,6 +107,7 @@ const PendingOrder = () => {
           rows={mockDataContacts}
           columns={columns}
           components={{ Toolbar: GridToolbar }}
+          sx={{ overflowX: "scroll" }}
         />
       </Box>
     </Box>
