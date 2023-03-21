@@ -8,6 +8,7 @@ import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 
+
 const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
@@ -193,22 +194,29 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
-                        <Item
-              title="COMPLETE"
-              to="/completed"
+            <Item
+              title="TRACKING UPDATES"
+              to="/trackingupdates"
               icon={<ContactsOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
-                        <Item
-              title="COMPLETE"
-              to="/completed"
+            <Item
+              title="ESCALATIONS"
+              to="/escalations"
               icon={<ContactsOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
-                        <Item
-              title="COMPLETE"
+            <Item
+              title="ABNORMALITIES"
+              to="/abnormalities"
+              icon={<ContactsOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title="LOG OUT"
               to="/completed"
               icon={<ContactsOutlinedIcon />}
               selected={selected}
