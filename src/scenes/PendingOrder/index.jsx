@@ -10,8 +10,8 @@ const PendingOrder = () => {
   const colors = tokens(theme.palette.mode);
 
   const columns = [
-    { field: "unqiue ID", headerName: "UNIQUE ID", flex: 0.5 },
-    { field: "Consignor", headerName: "CONSIGNOR" },
+    { field: "unqiue ID", headerName: "UNIQUE ID", flex: 1 },
+    { field: "Consignor", headerName: "CONSIGNOR", flex:1 },
     {
       field: "Consignee",
       headerName: "CONSIGNEE",

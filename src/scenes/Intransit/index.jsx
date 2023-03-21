@@ -10,8 +10,8 @@ const Intransit = () => {
   const colors = tokens(theme.palette.mode);
 
   const columns = [
-    { field: "unqiue ID", headerName: "UNIQUE ID", flex: 0.5 },
-    { field: "eway exp", headerName: "EWAY EXP" },
+    { field: "unqiue ID", headerName: "UNIQUE ID", flex: 2 },
+    { field: "eway exp", headerName: "EWAY EXP", flex: 2 },
     {
       field: "gc number",
       headerName: "GC NUMBER",
