@@ -10,102 +10,119 @@ const Intransit = () => {
   const colors = tokens(theme.palette.mode);
 
   const columns = [
-    { field: "unqiue ID", headerName: "UNIQUE ID" },
-    { field: "eway exp", headerName: "EWAY EXP" },
+    { field: "unqiue ID", headerName: "UNIQUE ID", width: 150 },
+    { field: "eway exp", headerName: "EWAY EXP", width: 150 },
     {
       field: "gc number",
       headerName: "GC NUMBER",
       cellClassName: "name-column--cell",
+      width: 150,
     },
     {
       field: "vehicleve no.",
       headerName: "VEHICLEVE NO.",
-      headerAlign: "left",
-      align: "left",
+      width: 150,
     },
     {
       field: "driver no.",
       headerName: "DRIVER NO.",
+      width: 150,
 
     },
     {
       field: "vehicle type",
       headerName: "VEHICLE TYPE",
+      width: 150,
 
     },
     {
       field: "remaining kms",
       headerName: "REMAINING KMS",
+      width: 150,
 
     },
     {
       field: "current loc.",
       headerName: "CURRENT LOC.",
+      width: 150,
 
     },
     {
       field: "Consignor",
       headerName: "CONSIGNOR",
+      width: 150,
 
     },
     {
       field: "Consignee",
       headerName: "CONSIGNEE",
+      width: 150,
 
     },
     {
       field: "Consignee add.",
       headerName: "CONSIGNEE ADD.",
+      width: 150,
 
     },
     {
       field: "fit",
       headerName: "FIT",
+      width: 150,
 
     },
     {
       field: "inc",
       headerName: "INC",
+      width: 150,
 
     },
     {
       field: "puc",
       headerName: "PUC",
+      width: 150,
 
     },
     {
       field: "np",
       headerName: "NP",
+      width: 150,
 
     },
     {
       field: "permit",
       headerName: "PERMIT",
+      width: 150,
 
     },
     {
       field: "expected time",
       headerName: "EXPECTED TIME",
+      width: 150,
  
     },
     {
       field: "",
       headerName: "GATEINTIME VS ARRIVALTIME",
+      width: 200,
  
     },
     {
       field: "departureTime vs gateInTime",
       headerName: "DEPARTURETIME VS GATEINTIME",
+      width: 200,
  
     },
     {
       field: "Shipment Created",
       headerName: "SHIPMENT CREATED",
+      width: 150,
 
     },
     {
       field: "Shipment Number",
       headerName: "SHIPMENT NUMBER",
+      width: 150,
 
     },
   ];
@@ -113,7 +130,7 @@ const Intransit = () => {
   return (
     <Box m="20px">
       <Header
-        title="AT PICKUP"
+        title="INTRANSIT"
       />
       <Box
         m="40px 0 0 0"
@@ -129,7 +146,7 @@ const Intransit = () => {
             color: colors.greenAccent[300],
           },
           "& .MuiDataGrid-columnHeaders": {
-            backgroundColor: colors.blueAccent[700],
+            backgroundColor: colors.yellowAccent[200],
             borderBottom: "none",
           },
           "& .MuiDataGrid-virtualScroller": {
@@ -137,7 +154,7 @@ const Intransit = () => {
           },
           "& .MuiDataGrid-footerContainer": {
             borderTop: "none",
-            backgroundColor: colors.blueAccent[700],
+            backgroundColor: colors.yellowAccent[200],
           },
           "& .MuiCheckbox-root": {
             color: `${colors.greenAccent[200]} !important`,
