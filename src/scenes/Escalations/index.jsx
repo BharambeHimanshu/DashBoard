@@ -44,7 +44,7 @@ const Escalations = () => {
   return (
     <Box m="20px">
       <Header
-        title="AT PICKUP"
+        title="ESCALATIONS"
       />
       <Box
         m="40px 0 0 0"

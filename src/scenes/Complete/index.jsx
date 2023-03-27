@@ -159,7 +159,7 @@ const Complete = () => {
   return (
     <Box m="20px">
       <Header
-        title="AT PICKUP"
+        title="COMPLETE"
       />
       <Box
         m="40px 0 0 0"

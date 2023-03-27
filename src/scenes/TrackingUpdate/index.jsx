@@ -44,7 +44,7 @@ const Trackingupdates = () => {
   return (
     <Box m="20px">
       <Header
-        title="AT PICKUP"
+        title="TRACKING UPDATE"
       />
       <Box
         m="40px 0 0 0"

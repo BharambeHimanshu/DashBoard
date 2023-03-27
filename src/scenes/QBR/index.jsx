@@ -149,7 +149,7 @@ const QBR = () => {
   return (
     <Box m="20px">
       <Header
-        title="AT PICKUP"
+        title="QBR"
       />
       <Box
         m="40px 0 0 0"

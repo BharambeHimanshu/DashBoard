@@ -44,7 +44,7 @@ const Abnormalities = () => {
   return (
     <Box m="20px">
       <Header
-        title="AT PICKUP"
+        title="ABNORMALITIES"
       />
       <Box
         m="40px 0 0 0"
